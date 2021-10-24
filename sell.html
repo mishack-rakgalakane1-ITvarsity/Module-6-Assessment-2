@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>Auto-4-Sale</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="javascript/api.js"></script> 
+        <link rel="stylesheet" href="fontAwesome/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+    </head>
+    <body>
+        <section class="Sub1-header">
+            <nav>
+                <a href="index.html"><img src="logo/logo003.png"></a>  
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sell.html">CARS FOR SALE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>CARS FOR SALE</h1>
+        </section>
+
+        <!------- Contact Us  ----------->
+       
+        <section class="cars">
+
+                <div class="row">
+                    <div class="cars-col">
+                    <a href="bentley.html"><img src="pics/cars/bentley.jpg"></a>
+                    <h1>POV</h1>
+                    <h3>Bentley</h3>
+                    <p><i class="far fa-calendar-alt"></i> 2018</p>
+                    <p><i class="fas fa-gas-pump"></i> Petrol</p>
+                    <p><i class="fas fa-history"></i> 2010km</p>
+                    <p><i class="fab fa-whmcs"></i> Automatic</p>
+                </div>
+                <div class="cars-col">
+                    <a href=""><img src="pics/cars/Bmw.jpg"></a>
+                    <h1>R570 865</h1>
+                    <h3>BMW 320i</h3>
+                    <p><i class="far fa-calendar-alt"></i> 2020</p>
+                    <p><i class="fas fa-gas-pump"></i> Petrol</p>
+                    <p><i class="fas fa-history"></i> 1300km</p>
+                    <p><i class="fab fa-whmcs"></i> Automatic</p>
+                </div>
+                <div class="cars-col">
+                    <a href=""><img src="pics/cars/toyota.jpg"></a>
+                    <h1>R198 520</h1>
+                    <h3>Toyota Yaris</h3>
+                    <p><i class="far fa-calendar-alt"></i> 2016</p>
+                    <p><i class="fas fa-gas-pump"></i> Petrol</p>
+                    <p><i class="fas fa-history"></i> 31300km</p>
+                    <p><i class="fab fa-whmcs"></i> Manual</p>
+                </div> 
+                    
+                </div>
+        </section>
+       
+
+        <!------------- FOOTER ------------>
+
+        <section class="footer">
+        
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                
+            </section>
+
+
+
+
+<!-----------Javascript For toogle Menu------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+
+
+</html>

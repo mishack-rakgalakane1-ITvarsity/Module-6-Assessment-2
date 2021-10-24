@@ -1,0 +1,385 @@
+
+/* ***************************************************** */
+/* Universal
+/* *********************************************************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins',sans-serif;
+}
+
+/* ***************************************************** */
+/* Header
+/* *********************************************************************************** */
+
+.header {
+  min-height:100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url('pics/cars/bckground.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+}
+
+.text-box{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff  ;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+/*font-awesome styling */
+nav .fas{
+    display: none;
+}
+/*media type styling*/
+@media only screen and (max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+   }
+   .nav-links ul{
+       padding: 30px;
+   }
+   .cta h1{
+       font-size: 24px;
+   }
+}
+
+/*========CArs======*/
+.cars{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cars-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.cars-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cars-col p{
+    padding: 0;
+    display: inline-block;
+    justify-content: space-between;
+}
+.cars-col h3{
+    margin: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.cars-col h1{
+    margin: 16px;
+    margin-bottom: 15px;
+    color: cornflowerblue;
+}   
+/*-------- Call to action ----*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pics/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+/*----------- footer ----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(0,0,0);
+    border-top: 2px solid rgb(244,119,53);
+}
+
+.icons .fab{
+    font-size: 40px;
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/*========= popular car view ====*/
+.container{
+    width: 216px;
+    margin-right: 11px;
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+/*========== CARS FOR SALE =========*/
+.row-car{
+    margin-top: 5%;
+    display:grid;
+    justify-content: space-between;
+}
+.cars-col-car{
+    flex-basis: 80%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.cars-col-car img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cars-col-car p{
+    padding: 0;
+    display: inline-block;
+    justify-content: space-between;
+}
+.cars-col-car h3{
+    margin: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.cars-col-car h1{
+    margin: 16px;
+    margin-bottom: 15px;
+    color: cornflowerblue;
+}   
+
+
+
+
+
+/*----------------- about us --------------*/
+.Sub-header{
+    height: 50vh;
+    width: 100% ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('pics/abt-us.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.Sub-header h1{
+margin-top: 100px;
+}
+.about-us{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.a-heading{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.a-heading h2{
+    padding-bottom: 12px;
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.violet-text {
+    color: #532380;
+}
+.cyan-text {
+    color: #00bfde;
+}
+/*============ Contatct page ========*/
+.Sub1-header{
+    height: 50vh;
+    width: 100% ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('pics/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.Sub1-header h1{
+margin-top: 100px;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto; 
+}
+.contact-col{
+    flex-basis:48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fas{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size:20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+.contact-col button{
+    color:#555;
+    border: 1px solid rgb(139, 138, 138);
+}
+
+/*=========== CONGRATS =========*/
+.Sub2-header{
+    height: 13vh;
+    width: 100% ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('pics/abt-us.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.a-heading h1{
+    padding-bottom: 50px;
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.a-heading p{
+    padding-right: 40px;
+}
+.close{
+    padding-top: 100px;
+}
+video{
+    width: 100%;
+}
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>Auto-4-Sale</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="javascript/api.js"></script> 
+        <link rel="stylesheet" href="fontAwesome/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+    </head>
+    <body>
+        <section class="Sub1-header">
+            <nav>
+                <a href="index.html"><img src="logo/logo003.png"></a>  
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">CARS FOR SALE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+        
+       
+        <section class="cars">
+            
+            <h1>Popular Cars</h1>
+            <p>Here are some of the most bought cars in the country, with the the best deals in the market.</p>
+                <div class="row-car">
+                    <div class="cars-col-car">
+                        <a href=""><img src="pics/cars/bentley.jpg"></a>
+                        <h1>POV</h1>
+                        <h3>Bentley</h3>
+                        <p><i class="far fa-calendar-alt"></i> 2018</p>
+                        <p><i class="fas fa-gas-pump"></i> Petrol</p>
+                        <p><i class="fas fa-history"></i> 2010km</p>
+                        <p><i class="fab fa-whmcs"></i> Automatic</p>
+                    </div>
+                  <div class="specs">
+                      <h3>Seller's Comment.</h3>
+                      <div class="info">
+                          <p>ICE WHITE/ BLACK RED INTERIOR, REAR INDIVIDUAL SEATS, REAR ENTERTAINMENT,
+                               PANORAMIC ROOF, 21 DIAMOND CUT WHEELS,
+                             HEADS UP DISPLAY, 360 DEGREE CAMERAS, BLIND SPOT ASSIST, LANE ASSIST, PARK ASSIST</p>
+                      </div>
+                      <ul>
+                          <li></li>
+                      </ul>
+                  </div>
+                    
+                </div>
+        </section>
+       
+
+        <!------------- FOOTER ------------>
+    
+
+        <section class="footer">
+        
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                
+            </section>
+
+
+
+
+<!-----------Javascript For toogle Menu------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+
+
+</html>
