@@ -239,6 +239,7 @@ p{
 }
 .cars-col-car p{
     padding: 0;
+    padding-left: 15px;
     display: inline-block;
     justify-content: space-between;
 }
@@ -252,10 +253,37 @@ p{
     margin-bottom: 15px;
     color: cornflowerblue;
 }   
+.specs h3{
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
 
+}
+.info p{
+    text-align: left;
+    float: left;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.description-list{
+    flex-basis: 80%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
 
-
-
+.description-list ul{
+    padding-left: 20px
+}
+.description-list li{
+    
+    display: flex;
+    padding-left: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 1.5;
+}
 
 /*----------------- about us --------------*/
 .Sub-header{
